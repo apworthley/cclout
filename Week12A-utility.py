@@ -67,5 +67,18 @@ def Union (list1, list2):
     list3 = list1 + list2
     return list3
 
-       
+##############################################################################
+##############################################################################
 
+def Intersection (players2, players):
+    intersection =[]
+    for i in players2:
+        if i in players:
+            intersection.append(i)
+    return intersection
+    
+players2 = ["Melvin", "Martian", "Baka", "Xai", "Cody"]
+players = ["Mary", "Cody", "Joe", "Jill", "Xai", "Bodo"]
+print (Intersection(players2, players))      
+##############################################################################
+##############################################################################
