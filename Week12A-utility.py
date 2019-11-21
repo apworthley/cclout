@@ -23,9 +23,26 @@ def LoadFile (file):
 def UpdateString (word, letter, number):
     newstring=word[:number]+letter+ word[number+1:]
     return newstring
+
 def FindWordCount(a, findword):
     count=0
     for i in a:
         count+= i.count(findword)
     return count
+
+def ScoreFinder( players, scores, name):
+    name.lower()
+    lplayers=[]
+    
+    for i in players:
+        lol=i.lower()
+        lplayers.append(lol)
+    if name not in lplayers:
+        return "player not found"
+    else:
+        index = lplayers.index(name)
+        fscore= scores[index]
+        output = name +" got a score of "+ str(fscore)
+        return output
+       
 
