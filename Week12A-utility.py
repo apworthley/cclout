@@ -2,9 +2,15 @@
 #CSCI 102 - Section G
 #Week 12 - Part b
 
+
+##############################################################################
+##############################################################################
+
 def PrintOutput (output):
     print("OUTPUT", output)
 
+##############################################################################
+##############################################################################
 
 def LoadFile (file):
     f = open (file , "r")
@@ -20,9 +26,16 @@ def LoadFile (file):
         else:
             new.append(i)
     return new
+
+##############################################################################
+##############################################################################
+
 def UpdateString (word, letter, number):
     newstring=word[:number]+letter+ word[number+1:]
     return newstring
+
+##############################################################################
+##############################################################################
 
 def FindWordCount(a, findword):
     count=0
@@ -30,10 +43,12 @@ def FindWordCount(a, findword):
         count+= i.count(findword)
     return count
 
+##############################################################################
+##############################################################################
+
 def ScoreFinder( players, scores, name):
     name.lower()
     lplayers=[]
-    
     for i in players:
         lol=i.lower()
         lplayers.append(lol)
@@ -44,5 +59,13 @@ def ScoreFinder( players, scores, name):
         fscore= scores[index]
         output = name +" got a score of "+ str(fscore)
         return output
+
+##############################################################################
+##############################################################################
+
+def Union (list1, list2):
+    list3 = list1 + list2
+    return list3
+
        
 
