@@ -13,7 +13,11 @@ def LoadFile (file):
     for line in f:
         old.append(line)
     return old
-"""def main():
+def UpdateString (word, letter, number):
+    newstring=word[:number]+letter+ word[number+1:]
+    return newstring
+def main():
     PrintOutput("lol")
     print (LoadFile("a.txt"))
-main()"""
+    print (UpdateString("Andrew", "bitch", 2))
+main()
